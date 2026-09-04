@@ -73,9 +73,10 @@
         <div class="max-w-6xl mx-auto px-6">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 -mt-16 relative z-10">
                 
-                <div class="bg-white p-6 rounded-2xl shadow-xl border border-slate-100 flex items-start space-x-4">
+                <!-- Avtodomi -->
+                <div class="bg-white p-6 rounded-2xl shadow-xl border border-slate-100 flex items-start space-x-4 hover:shadow-2xl transition duration-300">
                     <div class="w-14 h-14 bg-amber-500/10 text-amber-600 rounded-xl flex items-center justify-center text-2xl shrink-0">
-                        <i class="fa-solid fa-bus-simple"></i>
+                        <i class="fa-solid fa-van-shuttle"></i>
                     </div>
                     <div>
                         <h3 class="font-bold text-lg text-slate-900">Avtodomi</h3>
@@ -83,9 +84,10 @@
                     </div>
                 </div>
 
-                <div class="bg-white p-6 rounded-2xl shadow-xl border border-slate-100 flex items-start space-x-4">
+                <!-- Navtika -->
+                <div class="bg-white p-6 rounded-2xl shadow-xl border border-slate-100 flex items-start space-x-4 hover:shadow-2xl transition duration-300">
                     <div class="w-14 h-14 bg-blue-500/10 text-blue-600 rounded-xl flex items-center justify-center text-2xl shrink-0">
-                        <i class="fa-solid fa-anchor"></i>
+                        <i class="fa-solid fa-sailboat"></i>
                     </div>
                     <div>
                         <h3 class="font-bold text-lg text-slate-900">Navtika & plovila</h3>
@@ -93,9 +95,10 @@
                     </div>
                 </div>
 
-                <div class="bg-white p-6 rounded-2xl shadow-xl border border-slate-100 flex items-start space-x-4">
+                <!-- Počitniške prikolice -->
+                <div class="bg-white p-6 rounded-2xl shadow-xl border border-slate-100 flex items-start space-x-4 hover:shadow-2xl transition duration-300">
                     <div class="w-14 h-14 bg-emerald-500/10 text-emerald-600 rounded-xl flex items-center justify-center text-2xl shrink-0">
-                        <i class="fa-solid fa-truck-ramp-box"></i>
+                        <i class="fa-solid fa-caravan"></i>
                     </div>
                     <div>
                         <h3 class="font-bold text-lg text-slate-900">Počitniške prikolice</h3>
@@ -107,23 +110,29 @@
         </div>
     </section>
 
-    <!-- Slika in Predstavitvena sekcija (POPRAVLJENA SLIKA) -->
+    <!-- Slika in Predstavitvena sekcija z dvema slikama -->
     <section class="py-16 px-6 max-w-6xl mx-auto">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             
-            <!-- Prikaz celotne slike -->
-            <div class="relative">
-                <div class="overflow-hidden rounded-2xl shadow-2xl border border-slate-200 bg-slate-900">
-                    <img src="objekt.jpg" alt="Pokrit prostor za avtodome in plovila Pletovarje" class="w-full h-auto max-h-[500px] object-contain hover:scale-102 transition duration-500 block">
+            <!-- Galerija slik (dve sliki) -->
+            <div class="lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="relative overflow-hidden rounded-2xl shadow-lg border border-slate-200 group">
+                    <img src="objekt.jpg" alt="Zunanji pogled objekta Pletovarje" class="w-full h-full aspect-[4/3] object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute bottom-3 left-3 bg-slate-900/80 backdrop-blur-sm text-white px-3 py-1 rounded-lg text-xs font-semibold">
+                        <i class="fa-solid fa-building mr-1 text-amber-400"></i> Zunanjost
+                    </div>
                 </div>
-                <div class="absolute -bottom-4 -right-4 bg-slate-900 text-white p-4 rounded-xl shadow-lg border border-slate-700 hidden sm:block">
-                    <p class="text-xs text-slate-400">Podlaga objekta</p>
-                    <p class="text-sm font-bold text-amber-500"><i class="fa-solid fa-circle-check mr-1"></i> Utrjen betonski tlak</p>
+
+                <div class="relative overflow-hidden rounded-2xl shadow-lg border border-slate-200 group">
+                    <img src="objekt2.jpg" alt="Notranjost pokritega prostora Pletovarje" class="w-full h-full aspect-[4/3] object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute bottom-3 left-3 bg-slate-900/80 backdrop-blur-sm text-white px-3 py-1 rounded-lg text-xs font-semibold">
+                        <i class="fa-solid fa-warehouse mr-1 text-amber-400"></i> Urejena notranjost
+                    </div>
                 </div>
             </div>
             
             <!-- Opis lokacije in prednosti -->
-            <div>
+            <div class="lg:col-span-6">
                 <h2 class="text-3xl font-bold text-slate-900 mb-6 leading-snug">Zakaj izbrati naš pokriti prostor?</h2>
                 
                 <div class="space-y-6">
